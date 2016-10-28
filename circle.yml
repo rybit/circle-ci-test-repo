@@ -1,0 +1,4 @@
+deployment:
+  production:
+    branch: master
+    commands: netlify deploy -t $NETLIFY_TOKEN
