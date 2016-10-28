@@ -1,13 +1,8 @@
 machine:
   node:
     version: 6.9.1
-
 checkout:
 dependencies:
-  pre:
-    - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
-    - tar -xzvf hugo_0.17_Linux-64bit.tar.gz
-    - which hugo
   post:
     - npm install -g netlify
 database:
