@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 6.9.1
+checkout:
+dependencies:
+  post:
+    - npm install -g netlify
+database:
+test:
+deployment:
+  production:
+    branch: master
+    commands: netlify deploy -t $NETLIFY_TOKEN
