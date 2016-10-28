@@ -2,7 +2,6 @@ machine:
   commands:
     - echo "here"
 
-checkout:
 
 deployment:
   production:
