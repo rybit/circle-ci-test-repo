@@ -1,9 +1,20 @@
 machine:
-  commands:
-    - echo "here"
-
+    ruby:
+      version:
+        2.3.0
 
 deployment:
   production:
     branch: master
-    commands: netlify deploy -t $NETLIFY_TOKEN
+    commands:
+      - npm install netlify-cli -g
+      - netlify deploy -t $NETLIFY_TOKEN
+
+dependencies:
+  override:
+    - echo "overries"
+
+test:
+  override:
+    - echo "test"
+
