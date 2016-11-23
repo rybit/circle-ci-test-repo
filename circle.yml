@@ -7,8 +7,10 @@ deployment:
   production:
     branch: master
     commands:
-      - npm install netlify-cli -g
-      - netlify deploy -t $NETLIFY_TOKEN
+      - wget https://github.com/netlify/netlifyctl/releases/download/v0.0.1/netlifyctl-v0.0.1-linux-amd64.tar.gz
+      - tar -xzvf netlifyctl-v0.0.1-linux-amd64.tar.gz
+      - ./netlifyctl version
+      - ./netlifyctl deploy -A $NETLIFY_TOKEN
 
 dependencies:
   override:
