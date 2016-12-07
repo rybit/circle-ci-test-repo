@@ -7,8 +7,8 @@ deployment:
   production:
     branch: master
     commands:
-      - wget https://github.com/netlify/netlifyctl/releases/download/v0.0.2/netlifyctl-v0.0.2-linux-amd64.tar.gz
-      - tar -xzvf netlifyctl-v0.0.2-linux-amd64.tar.gz
+      - wget https://github.com/netlify/netlifyctl/releases/download/v0.0.3/netlifyctl-v0.0.3-linux-amd64.tar.gz
+      - tar -xzvf netlifyctl-v0.0.3-linux-amd64.tar.gz
       - ./netlifyctl version
       - ./netlifyctl deploy -D -A $NETLIFY_TOKEN
 
